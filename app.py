@@ -1,5 +1,6 @@
 from distutils.log import debug
 from flask import Flask
+from auth import API_KEY, API_SECRET, BEARER_TOKEN
 
 app = Flask(__name__)
 
