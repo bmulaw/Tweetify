@@ -9,11 +9,10 @@ ACCESS_SECRET = config('ACCESS_SECRET')
 
 def OAuth():
     try:
-        auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
+        auth = tweepy.OAuthHandler(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
         auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
         return auth
     except Exception as e:
-        print("ERRORRRRR" , e)
         return e
 
 oauth = OAuth()
