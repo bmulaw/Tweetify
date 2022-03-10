@@ -14,7 +14,6 @@ def OAuth():
         return auth
     except Exception as e:
         return e
-
 oauth = OAuth()
 api = tweepy.API(oauth)
 api.verify_credentials()
