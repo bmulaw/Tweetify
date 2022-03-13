@@ -15,7 +15,7 @@ token = util.prompt_for_user_token(
              client_secret=client_secret,
              redirect_uri='http://localhost:5000/') 
 sp = spotipy.Spotify(auth=token)
-print(sp)
+
 @app.route('/')
 def test():
     return "this is a test on spotify.py"
