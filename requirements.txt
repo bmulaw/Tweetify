@@ -1,3 +1,5 @@
 flask
 python-decouple
+decouple
 tweepy
+spotipy
