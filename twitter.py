@@ -20,9 +20,9 @@ class Twitter():
         try:
             auth = tweepy.OAuthHandler(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
             auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
-            return auth
+            return auth, 200
         except Exception as e:
-            return e
+            return e, 404
         
     def sendTestTweet(self):
         oauth = self.setOAuth()
