@@ -1,12 +1,6 @@
 from decouple import config
 import tweepy
 
-API_KEY = config('T_API_KEY')
-API_SECRET = config('T_API_SECRET')
-BEARER_TOKEN = config('T_BEARER_TOKEN')
-ACCESS_TOKEN = config('T_ACCESS_TOKEN')
-ACCESS_SECRET = config('T_ACCESS_SECRET')
-
 class Twitter():
 
     def __init__(self):
