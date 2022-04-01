@@ -27,7 +27,5 @@ class Spotify(Twitter):
     # def getUsersTweeterAuth():
         # TODO: call parent class Twitter to get user's Auth and send tweet if prev method (isNewSnogLikedByUser) is true
 
-
-
 if __name__ == "__main__":
     app.run(debug=True)
